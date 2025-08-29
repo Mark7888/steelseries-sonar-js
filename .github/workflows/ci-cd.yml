@@ -87,7 +87,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: npm-package
-          path: steelseries-sonar-js-*.tgz
+          path: steelseries-sonar-*.tgz
           retention-days: 30
 
   publish-npm:
@@ -98,7 +98,7 @@ jobs:
     
     environment:
       name: npm
-      url: https://www.npmjs.com/package/steelseries-sonar-js
+      url: https://www.npmjs.com/package/steelseries-sonar
 
     steps:
       - name: Checkout code
@@ -151,7 +151,7 @@ jobs:
 
       - name: Configure package for GitHub Packages
         run: |
-          sed -i 's/"name": "steelseries-sonar-js"/"name": "@mark7888\/steelseries-sonar-js"/g' package.json
+          sed -i 's/"name": "steelseries-sonar"/"name": "@mark7888\/steelseries-sonar"/g' package.json
 
       - name: Publish to GitHub Packages
         run: npm publish
@@ -195,13 +195,13 @@ jobs:
             ## Installation
             
             ```bash
-            npm install steelseries-sonar-js@${{ steps.get_version.outputs.VERSION }}
+            npm install steelseries-sonar@${{ steps.get_version.outputs.VERSION }}
             ```
             
             or
             
             ```bash
-            yarn add steelseries-sonar-js@${{ steps.get_version.outputs.VERSION }}
+            yarn add steelseries-sonar@${{ steps.get_version.outputs.VERSION }}
             ```
           draft: false
           prerelease: false
@@ -212,6 +212,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: steelseries-sonar-js-${{ steps.get_version.outputs.VERSION }}.tgz
-          asset_name: steelseries-sonar-js-${{ steps.get_version.outputs.VERSION }}.tgz
+          asset_path: steelseries-sonar-${{ steps.get_version.outputs.VERSION }}.tgz
+          asset_name: steelseries-sonar-${{ steps.get_version.outputs.VERSION }}.tgz
           asset_content_type: application/gzip

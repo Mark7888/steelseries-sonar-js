@@ -1,5 +1,5 @@
 /**
- * Simple test script for steelseries-sonar-js
+ * Simple test script for steelseries-sonar
  */
 
 import { Sonar, ChannelName, StreamerSliderName } from './src/sonar';

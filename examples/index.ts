@@ -1,4 +1,6 @@
 /**
+ * Examples for steelseries-sonar
+ * 
  * Examples for steelseries-sonar-js
  * 
  * Run these examples to see the library in action:
