@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: publish
 
 on:
   workflow_dispatch: # Allow running the workflow manually from the GitHub UI
