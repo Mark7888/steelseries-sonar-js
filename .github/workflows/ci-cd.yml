@@ -28,6 +28,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Ensure consistent line endings across platforms
+          autocrlf: false
+
+      - name: Normalize line endings (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+          git rm --cached -r .
+          git reset --hard
 
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
