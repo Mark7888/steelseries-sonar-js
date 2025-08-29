@@ -1,5 +1,5 @@
 /**
- * Basic usage example for steelseries-sonar-js
+ * Basic usage example for steelseries-sonar
  * 
  * This example demonstrates the basic functionality of the library
  * including connecting to Sonar, getting volume data, and controlling audio channels.

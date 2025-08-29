@@ -1,6 +1,6 @@
 # SteelSeries Sonar JavaScript/TypeScript API
 
-[![npm version](https://badge.fury.io/js/steelseries-sonar-js.svg)](https://badge.fury.io/js/steelseries-sonar-js)
+[![npm version](https://badge.fury.io/js/steelseries-sonar.svg)](https://badge.fury.io/js/steelseries-sonar)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
@@ -23,12 +23,12 @@ Install the package using npm or yarn:
 
 ### Using npm
 ```bash
-npm install steelseries-sonar-js
+npm install steelseries-sonar
 ```
 
 ### Using yarn
 ```bash
-yarn add steelseries-sonar-js
+yarn add steelseries-sonar
 ```
 
 ## Usage
@@ -37,18 +37,18 @@ yarn add steelseries-sonar-js
 
 #### ES6 Modules / TypeScript
 ```typescript
-import { Sonar, SonarOptions } from 'steelseries-sonar-js';
+import { Sonar, SonarOptions } from 'steelseries-sonar';
 ```
 
 #### CommonJS
 ```javascript
-const { Sonar } = require('steelseries-sonar-js');
+const { Sonar } = require('steelseries-sonar');
 ```
 
 ### Basic Example
 
 ```typescript
-import { Sonar } from 'steelseries-sonar-js';
+import { Sonar } from 'steelseries-sonar';
 
 async function main() {
   try {
@@ -217,7 +217,7 @@ import {
   SonarNotEnabledError,
   InvalidVolumeError,
   ChannelNotFoundError
-} from 'steelseries-sonar-js';
+} from 'steelseries-sonar';
 
 try {
   const sonar = await Sonar.create();
@@ -257,7 +257,7 @@ try {
 ### Complete Example
 
 ```typescript
-import { Sonar, ChannelName } from 'steelseries-sonar-js';
+import { Sonar, ChannelName } from 'steelseries-sonar';
 
 async function controlSonar() {
   try {
@@ -306,7 +306,7 @@ controlSonar();
 ### Streamer Mode Example
 
 ```typescript
-import { Sonar } from 'steelseries-sonar-js';
+import { Sonar } from 'steelseries-sonar';
 
 async function streamerExample() {
   try {

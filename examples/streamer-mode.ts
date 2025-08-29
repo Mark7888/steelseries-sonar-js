@@ -1,5 +1,5 @@
 /**
- * Streamer mode example for steelseries-sonar-js
+ * Streamer mode example for steelseries-sonar
  * 
  * This example demonstrates how to use the library in streamer mode
  * with separate streaming and monitoring sliders.

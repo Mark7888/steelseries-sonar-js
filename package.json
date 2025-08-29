@@ -1,5 +1,5 @@
 {
-  "name": "steelseries-sonar-js",
+  "name": "steelseries-sonar",
   "version": "1.0.0",
   "description": "A JavaScript/TypeScript package for interacting with the SteelSeries Sonar application API",
   "main": "dist/index.js",
